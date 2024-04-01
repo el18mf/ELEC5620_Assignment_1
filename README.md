@@ -190,17 +190,6 @@ To note: The use of ${\color{red}volatile \space unsigned \space char*}$ while d
 
 ***Provided Hint: Investigation of the C modulo (%) operator would be beneficial***
 
-## ${\color{gold}Resources}$
-Here is a list of resources created and used during the process of this Assignment:
-- Excel Sheet created to allow visualisation of 7-Segment Display for 0-9 and A-F - [7-Segment Excel - Online](https://leeds365-my.sharepoint.com/:x:/g/personal/el18mf_leeds_ac_uk/Edg4A6v9ZDZDtbDtA-TnmbwB0QYruoaQz7MNOmsCEc4idA?e=MDMCSj) or [7-Segment Excel - Local](info/7-segment%20display%20-%20number%20and%20letter%20cell%20identifier.xlsx)
-- For step 4, use of [main.c](1-A-SevenSegDisplay\main.c) in bug fixing as well as confirming that the code was correct and instead the project naming was incorrect
-- Resource that taught me how to implement colour text within this readme: [stackoverflow](https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file#:~:text=You%20can%20however%20add%20color,or%20%22code%22%20tags%20needed.)
-- After realising how big the images appeared as, I looked into resizing images and found out an alternative method to embedded images here: [Github comment chain](https://gist.github.com/uupaa/f77d2bcf4dc7a294d109)
-
-- Github Markdown cheat sheet which helped with the contents page [Github CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
-- Used the assessment specification as a resource quite obviously, however I also made use of two tables within the document for Step 3: Configuration. [Specification](Info/Spec_1.pdf)
-
 ## Debugging: Arm Development Studio and Real-Life Hardware
 ### Step 3: Debugging
 - [X] Testing
@@ -302,3 +291,14 @@ Related Images
 - Combined Successful Test of Step 6 & 7 due to time restrictions
 
 <img src="Images\Debugging\Step6_7\Step3_10.png" width="800" height="500">
+
+## ${\color{gold}Resources}$
+Here is a list of resources created and used during the process of this Assignment:
+- Excel Sheet created to allow visualisation of 7-Segment Display for 0-9 and A-F - [7-Segment Excel - Online](https://leeds365-my.sharepoint.com/:x:/g/personal/el18mf_leeds_ac_uk/Edg4A6v9ZDZDtbDtA-TnmbwB0QYruoaQz7MNOmsCEc4idA?e=MDMCSj) or [7-Segment Excel - Local](info/7-segment%20display%20-%20number%20and%20letter%20cell%20identifier.xlsx)
+- For step 4, use of [main.c](1-A-SevenSegDisplay\main.c) in bug fixing as well as confirming that the code was correct and instead the project naming was incorrect
+- Resource that taught me how to implement colour text within this readme: [stackoverflow](https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file#:~:text=You%20can%20however%20add%20color,or%20%22code%22%20tags%20needed.)
+- After realising how big the images appeared as, I looked into resizing images and found out an alternative method to embedded images here: [Github comment chain](https://gist.github.com/uupaa/f77d2bcf4dc7a294d109)
+
+- Github Markdown cheat sheet which helped with the contents page [Github CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+- Used the assessment specification as a resource quite obviously, however I also made use of two tables within the document for Step 3: Configuration. [Specification](Info/Spec_1.pdf)
