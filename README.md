@@ -30,17 +30,17 @@ The assignment was comprised of the following 7 steps:
     - [x] Project name is ${\color{green}1-A-SevenSegDisplay}$
     - [x] Location should be `C:\Users\Mathew\Workspace\ELEC5620-Assignment1-<GitHubUsername>\1-A-SevenSegDisplay` 
 
-- [ ] Step 3 - Configure Project Settings
-    - [ ] Using Unit 1.1 Notes configure the program settings properly or compiling shan't work
+- [X] Step 3 - Configure Project Settings
+    - [X] Using Unit 1.1 Notes configure the program settings properly or compiling shan't work
 
-- [ ] Step 4 - Setting the Base Peripheral Addresses
-    - [ ] The two peripheral addresses require setting in ${\color{green}DE1SoC_SevenSeg.c}$
+- [X] Step 4 - Setting the Base Peripheral Addresses
+    - [X] The two peripheral addresses require setting in ${\color{green}DE1SoC_SevenSeg.c}$
 
-- [ ] Step 5 - `DE1SoC_SevenSeg_SetSingle()` - Hexadecimal Single Display Decoder
+- [X] Step 5 - `DE1SoC_SevenSeg_SetSingle()` - Hexadecimal Single Display Decoder
 
-- [ ] Step 6 - `DE1SoC_SevenSeg_SetDoubleHex()` – Hexadecimal Dual Display Decoder
+- [X] Step 6 - `DE1SoC_SevenSeg_SetDoubleHex()` – Hexadecimal Dual Display Decoder
 
-- [ ] Step 7 - `DE1SoC_SevenSeg_SetDoubleDec()` – Decimal Dual Display Decoder
+- [X] Step 7 - `DE1SoC_SevenSeg_SetDoubleDec()` – Decimal Dual Display Decoder
 
 ### ${\color{orange}Step \space 1 \space - \space Create \space Assignment \space Reposity \space Via \space Minerva \space Link}$ 
 - [X] Creation of Assignment Repositry using the link shown on minerva, as shown by the 2 images below: 
@@ -126,7 +126,7 @@ Configuration steps with accompanying images shown below
 <img src="Images/Step3/Step3_9.png" width="800" height="500">
 
 ### ${\color{orange}Step \space 4 \space - \space Setting \space the \space Base \space Peripheral \space Addresses}$
-- [ ] Base Peripheral Addresses Set
+- [X] Base Peripheral Addresses Set
 
 *To note here, while going through the steps, I got a tad distracted while setting up an excel sheet to display how 0-9 and A-F are shown, and what segments light up, causing me to look up some excel based commands. After this, I was cleaning up some tabs and stumbled across an extra Github page open on main.c, and I noticed that on line 25 that key_ptr had been set. I assume this is the correct format, and truthfully is what I had planned to do, but I thought it best to admit this as citing resources is important.*
 
@@ -148,27 +148,27 @@ The parallal I/O Port Control Registers for the 7-Segment display is shown below
 
 *Function Prototype on line 38 of [DE1SoC_SevenSeg.h](1-A-SevenSegDisplay/DE1SoC_SevenSeg/DE1SoC_SevenSeg.h)*
 
-- [ ] For values 0-9 and A-F, work out which bits need to be set to illuminate the correct sections of the seven-segment display, so that the number is shown on the display. Refer to Figure 1 for the bit to segment mapping, and Figure 2 to figure out which segments are needed for each symbol. 
+- [X] For values 0-9 and A-F, work out which bits need to be set to illuminate the correct sections of the seven-segment display, so that the number is shown on the display. Refer to Figure 1 for the bit to segment mapping, and Figure 2 to figure out which segments are needed for each symbol. 
     - *For example, if 1 is passed in, bits 1 and 2 are high, or if 0xC is passed in, bits 0, 3, 4, and 5 should be set high.*
-- [ ] Write the function, where you first translate ${\color{red}unsigned \space int}$ value to the relevant bit-mapping value, and call DE1SoC_SevenSeg_Write() with this value. If a value that is out of range is passed in
+- [X] Write the function, where you first translate ${\color{red}unsigned \space int}$ value to the relevant bit-mapping value, and call DE1SoC_SevenSeg_Write() with this value. If a value that is out of range is passed in
     - i.e. greater than 0xF (16 or higher), you should set the display to show a dash (segment 6 only).
-- [ ] It is possible to test this feature by pressing the button KEY0. This button has been configured in the control program to increment the value of HEX0 every time you press it. Press the button enough times to move from 0-9 then A-F. After you pass F, the display should just show a dash. You can press KEY3 to reset the value to 0 
+- [X] It is possible to test this feature by pressing the button KEY0. This button has been configured in the control program to increment the value of HEX0 every time you press it. Press the button enough times to move from 0-9 then A-F. After you pass F, the display should just show a dash. You can press KEY3 to reset the value to 0 
 
 ### ${\color{orange}Step \space 6 \space - \space DE1SoC_SevenSeg_SetDoubleHex() \space - \space Hexadecimal \space Dual \space Display \space Decoder}$
 *Function Prototype on line 49 of [DE1SoC_SevenSeg.h](1-A-SevenSegDisplay/E1SoC_SevenSeg/DE1SoC_SevenSeg.h)*
 
-- [ ] This function should take an input number in the range 0x00 - 0xFF and display it on a pair of displays. Use the display given in ${\color{red}unsigned \space int}$ display for the lower digit and display+1 for the higher digit.
-    - [ ] Out of range inputs should show a dash on both displays.
-    - [ ] This function will need to call DE1SoC_SevenSeg_SetSingle() twice.
+- [X] This function should take an input number in the range 0x00 - 0xFF and display it on a pair of displays. Use the display given in ${\color{red}unsigned \space int}$ display for the lower digit and display+1 for the higher digit.
+    - [X] Out of range inputs should show a dash on both displays.
+    - [X] This function will need to call DE1SoC_SevenSeg_SetSingle() twice.
 
 
 ### ${\color{orange}Step \space 7 \space – \space DE1SoC_SevenSeg_SetDoubleDec() \space – \space Decimal \space Dual \space Display \space Decoder}$
 *Function Prototype on line 60 of [DE1SoC_SevenSeg.h](1-A-SevenSegDisplay/DE1SoC_SevenSeg/DE1SoC_SevenSeg.h)*
 
-- [ ] This function should take an input number in the range 0 - 99 and display it on a pair of displays. Use the display given in unsigned int display for the lower digit and display+1 for the higher digit.
-    - [ ] If a value of 9 is passed in, the next value should be 10, 1 on the first display, 0 on the second, **NOT a value of A**.
-    - [ ] Out of range inputs should show a dash on both displays.
-    - [ ] This function will need to call DE1SoC_SevenSeg_SetSingle() twice.
+- [X] This function should take an input number in the range 0 - 99 and display it on a pair of displays. Use the display given in unsigned int display for the lower digit and display+1 for the higher digit.
+    - [X] If a value of 9 is passed in, the next value should be 10, 1 on the first display, 0 on the second, **NOT a value of A**.
+    - [X] Out of range inputs should show a dash on both displays.
+    - [X] This function will need to call DE1SoC_SevenSeg_SetSingle() twice.
 
 ***Provided Hint: Investigation of the C modulo (%) operator would be beneficial***
 
